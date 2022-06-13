@@ -169,10 +169,12 @@ if player1.hp > 0:
   delayPrint("Player 1 wins!\n")
   if player1.name == "MANNIX CHENG":
     delayPrint("Hi you won as MANNIX CHENG, Mr. Cheng please give us an A+\n")
-else:
+elif player2.hp >0:
   delayPrint("Player 2 wins!\n")  
   if player2.name == "MANNIX CHENG":
     delayPrint("Hi you won as MANNIX CHENG, Mr. Cheng please give us an A+\n")
-time.sleep(3)
+else:
+  delayPrint("It's a draw!\n")
+time.sleep(5)
 os.system('clear')
 delayPrint("Game Over\n")
